@@ -89,8 +89,6 @@ win.geometry("300x200")
 win.protocol("WM_DELETE_WINDOW", on_closing)
 
 style = ttk.Style(win)
-win.tk.call('source', os.path.dirname(__file__)+"/PyCordData/"+'theme/azure dark.tcl')
-style.theme_use('azure')
 
 lab= ttk.Label(win,text="Your IP: "+IP,font="calibri 12")
 lab.focus_set()
